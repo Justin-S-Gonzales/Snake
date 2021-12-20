@@ -27,8 +27,8 @@ int main()
 
 	Window window;
 
-	float width = 725;
-	float height = 525;
+	float width = 525;
+	float height = 325;
 
 	// Windowwwwwwdd
 	window = Window(width, height);
@@ -63,7 +63,7 @@ int main()
 	std::shared_ptr<Snake> snake(new Snake(rect, glm::vec2(0.0f, 0.0f), 
 		glm::vec2((float)gridSize, (float)gridSize), uModel, shader.GetShaderID(),
 		glm::vec4(0.0f, 1.0f, 0.0f, 1.0f), 25, keyUp, keyDown, keyLeft, keyRight, 
-		window.GetWidth(), window.GetHeight(), 0.15f));
+		window.GetWidth(), window.GetHeight(), 0.23f));
 
 	std::shared_ptr<Apple> apple(new Apple(rect, glm::vec3(0.0f, 100.0f, 0.0f), glm::vec2((float)gridSize, (float)gridSize), uModel,
 		shader.GetShaderID(), glm::vec4(1.0f, 0.0f, 0.0f, 1.0f), 

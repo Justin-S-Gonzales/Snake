@@ -33,7 +33,8 @@ private:
     GLfloat m_BufferWidth, m_BufferHeight;
 
     float m_TimeAccThresh;
+    bool m_HasMoved;
 
-    std::deque<std::shared_ptr<Object>> m_SnakeNodes;
+    std::deque<Object> m_SnakeNodes;
 };
 

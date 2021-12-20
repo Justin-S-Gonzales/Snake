@@ -31,9 +31,13 @@ public:
 
 	glm::vec2 GetPosition() { return m_Position; }
 	glm::vec2 GetScale() { return m_Scale; }
+	glm::vec4 GetColor() { return m_Color; }
 
 	void Move(glm::vec2 trajectory) { m_Position += trajectory; }
 	void SetPosition(glm::vec2 position) { m_Position = position; }
+
+	bool operator==(Object& object);
+	bool operator!=(Object& object);
 
 	~Object();
 };

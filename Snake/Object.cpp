@@ -36,6 +36,19 @@ void Object::Render()
 	m_Mesh->Render();
 }
 
+bool Object::operator==(Object& object)
+{
+	if (m_Position == object.GetPosition() && m_Scale == object.GetScale() && m_Color == object.GetColor())
+		return true;
+	else
+		return false;
+}
+
+bool Object::operator!=(Object& object)
+{
+	return !operator==(object);
+}
+
 Object::~Object()
 {
 }

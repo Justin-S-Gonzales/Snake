@@ -31,7 +31,7 @@ bool Window::CreateWindow()
 
 	glewExperimental = GL_TRUE;
 
-	m_Window = glfwCreateWindow(m_Width, m_Height, "Breakout", nullptr, nullptr);
+	m_Window = glfwCreateWindow(m_Width, m_Height, "Snake", nullptr, nullptr);
 
 	if (!m_Window)
 	{
